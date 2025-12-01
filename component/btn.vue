@@ -20,7 +20,6 @@ const props = defineProps({
 <style scoped>
 
 .fancy-btn {
-    background-color: white;
     color: black;
     font-weight: bold;
     padding: 12px 24px;
