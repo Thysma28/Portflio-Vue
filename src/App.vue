@@ -16,7 +16,7 @@
     <li><btn Name="Projets" Link=""/></li>
   </ul>
 
-<section class="hero">
+  <section class="hero">
     <div class="hero-content">
       <h2>Bonjour! Je suis</h2>
       <h1>Mathys LEININGER</h1>
@@ -24,17 +24,14 @@
         Développeur passionné et créatif, je crée des projets web modernes et performants.
         Toujours curieux, j’aime apprendre de nouvelles technologies et relever des défis.
       </p>
+      <div class="hero-buttons">   <!-- CHANGÉ ICI -->
+        <btn Name="Email" Link="#"/>
+        <btn Name="GitHub" Link="https://github.com/Thysma28"/>
+        <dl_btn Name="CV"/>
+        <btn Name="Arffornia" Link="#"/>
+      </div>
     </div>
-    <div class="hero">
-      <btn Name="Email" Link="#"/>
-      <btn Name="GitHub" Link="#"/>
-      <btn Name="CV" Link="#"/>
-      <btn Name="Arffornia" Link="#"/>
-    </div>
-
-
   </section>
-  
 </template>
 
 
@@ -43,6 +40,7 @@
 
   import { computed,ref } from 'vue';
   import Btn from '../component/btn.vue';
+import Dl_btn from '../component/dl_btn.vue';
 
 const isOpen = ref(false)
 
